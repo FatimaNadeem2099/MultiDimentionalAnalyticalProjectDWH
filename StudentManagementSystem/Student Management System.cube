@@ -1,0 +1,495 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0c0376bb-78b1-45f7-9f7a-972a3bde4c46" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Student Management System</ID>
+  <Name>Student Management System</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="44b49f0b-ab00-4630-9132-5c725b01d205">
+      <ID>Student Information Dt</ID>
+      <Name>Student Information Dt</Name>
+      <DimensionID>Student Information Dt</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ab1a39ee-53cd-4e92-b020-ed35320a76d6">
+          <AttributeID>Student Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e5f5786d-e21a-4463-9d21-993b28ca11af">
+          <AttributeID>Student Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1e4bfb5d-a7c1-4a5c-b1f4-b640c4c8bc59">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bdf4f3b8-9b24-44a8-95fa-680de6d44f1a">
+          <AttributeID>Phone No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="506aaed7-73bf-4d42-895a-924024583f5e">
+          <AttributeID>Date Of Birth</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e56ef1af-334d-4254-a455-2f0b59f9d938">
+      <ID>Time Dt</ID>
+      <Name>Time Dt</Name>
+      <DimensionID>Time Dt</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4ae46d94-bfb8-4229-8d8d-6affcd66c865">
+          <AttributeID>Time Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="40b09855-b301-47a7-bb18-5047362d3bac">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0719d189-d0e9-4790-85b3-6af90890229e">
+          <AttributeID>Full Date UK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4409e39d-b9b0-42fe-b118-17ff36922bf4">
+          <AttributeID>Full Date USA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="06abcffc-1573-4ea1-9203-f2d21a6a42a4">
+          <AttributeID>Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="36a76f58-6dfb-49a9-9140-74a4008f9a6d">
+          <AttributeID>Day Suffix</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d7c973e-11e9-40d1-9765-81ef2f61b5d3">
+          <AttributeID>Day Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd7bfcc4-9525-477f-9fe4-2d1c618cc3d4">
+          <AttributeID>Day Of Week USA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c8739da8-c4cf-496d-8d36-758f72b25153">
+          <AttributeID>Day Of Week UK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="28a9ae59-f5c3-466e-acf9-cb2acbbc37cb">
+          <AttributeID>Day Of Week In Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e48d7eab-1f24-4278-bdc5-13504b2b22ae">
+          <AttributeID>Day Of Week In Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e867b69d-2cb1-477b-98a0-5585ffc323b4">
+          <AttributeID>Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f762d3a3-4919-4a85-8a82-2097ab1e90d0">
+          <AttributeID>Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="613d9687-d98a-4788-a79e-0ff8ec615978">
+          <AttributeID>Week Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c2a44014-4c24-47db-9da2-92f1de08feaf">
+          <AttributeID>Week Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f7a11c21-d13f-4f02-87ae-31bf28d45775">
+          <AttributeID>Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="46170bb6-5cec-4401-9eeb-fb1fff57de1e">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cef451e8-58db-4c3c-adc1-ca6b1b25ea49">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c639be26-b0fd-4eeb-806e-537cfffc9388">
+          <AttributeID>Month Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24e8c1ab-592e-4c43-8551-d2e97677beb0">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc5886e4-4897-4fdb-b74d-506941e33eda">
+          <AttributeID>Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9b40b488-54dd-4924-92d0-e9ea5496aed1">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2fafd2da-1865-471c-bc20-92ad0c372ab1">
+          <AttributeID>Year Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="858bf3de-2c0a-421c-8135-96c07ab9a868">
+          <AttributeID>Month Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c180f80-cefa-48a6-8c9f-c7cac7c9a121">
+          <AttributeID>MMYYYY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57083614-40f6-4dd8-837f-af0437086727">
+          <AttributeID>First Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea8f164c-3339-44d9-8e0d-02df115f6a2b">
+          <AttributeID>Last Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f777c00e-6a26-4fcc-9849-ea9fd871a935">
+          <AttributeID>First Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4aa7db56-98bc-470b-9bfe-593a83b0f10c">
+          <AttributeID>Last Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e8f04b4c-735a-40e9-959c-9be5a849a992">
+          <AttributeID>First Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e79f4d54-d53b-4886-89fa-765fae76b961">
+          <AttributeID>Last Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb4f84a9-f32b-41a7-a9cb-6463d31dfe46">
+          <AttributeID>Is Holiday USA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d4f7fdc7-b9c6-46b9-b354-e0d90156f97a">
+          <AttributeID>Is Weekday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0e8f2e0-3ac4-4677-b555-d399b0851570">
+          <AttributeID>Holiday USA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="40a496e9-f504-4271-afeb-7653137495d5">
+          <AttributeID>Is Holiday UK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08ec076e-a765-4574-94ae-593e34d7ea75">
+          <AttributeID>Holiday UK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a7388fb-8291-41fe-afd9-790149c3daeb">
+          <AttributeID>Fiscal Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="96450df2-bc6a-4a42-b552-28b2bee581af">
+          <AttributeID>Fiscal Week Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7c6676c-ddc9-4220-898b-6af38d6128f0">
+          <AttributeID>Fiscal Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c6c41032-8b4f-4ec8-96ad-af7f7859643b">
+          <AttributeID>Fiscal Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bcfd833a-6bcc-4415-a163-872f3f6fc27d">
+          <AttributeID>Fiscal Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f2cf5101-b779-49d7-8f4f-1eff32f25ed1">
+          <AttributeID>Fiscal Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="055664ef-6615-4085-9d18-32f33a102fe2">
+          <AttributeID>Fiscal Year Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0b722c36-8942-4179-a5ee-86377b7735d0">
+          <AttributeID>Fiscal Month Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="36d5d485-5858-480e-a4e0-c23da4f70d2f">
+          <AttributeID>Fiscal MMYYYY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="677cbdf1-84eb-4632-ac06-9587e8ff0293">
+          <AttributeID>Fiscal First Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5ad06e8f-05d1-43d9-80eb-60faea41b26f">
+          <AttributeID>Fiscal Last Day Of Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8db9390d-ecf3-4d97-8e1b-e25b4361d996">
+          <AttributeID>Fiscal First Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1ab51853-26eb-4026-b76c-df645c548db9">
+          <AttributeID>Fiscal Last Day Of Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0c86bff9-9741-42f3-90d8-f94903a77b4a">
+          <AttributeID>Fiscal First Day Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="103b0718-986f-440c-821a-13635d3f1c8b">
+          <AttributeID>Fiscal Last Day Of Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ef9a17d2-ecc1-4bbb-85f8-62849e0a1295">
+      <ID>Supervisor Dt</ID>
+      <Name>Supervisor Dt</Name>
+      <DimensionID>Supervisor Dt</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e0f47856-f1f8-461d-8aea-43306bcdebc2">
+          <AttributeID>Supervisor Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b73f7982-1087-4afb-81b9-4963678746cf">
+          <AttributeID>Supervisor Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a129a163-0b59-442a-b60a-bd38781570e7">
+          <AttributeID>Phone Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7b6be858-2ff9-4785-a8d6-accbb6668710">
+          <AttributeID>Supervisor Email</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="daaa9033-14d8-4c37-9c22-142bbf8bfd44">
+      <ID>Semester Dt</ID>
+      <Name>Semester Dt</Name>
+      <DimensionID>Semester Dt</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d13afceb-3a5b-4137-9211-bc60cca82fdc">
+          <AttributeID>Semester Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4cc2ae60-9ab0-46eb-8223-c4bc67e19b72">
+          <AttributeID>Semester Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83fe2492-c07b-4f4d-aff4-fb82a0e7d536">
+          <AttributeID>Semester Number</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1699e989-136b-4f22-9108-1bf469ef4db8">
+      <ID>Student Address Dt</ID>
+      <Name>Student Address Dt</Name>
+      <DimensionID>Student Address Dt</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a1a8bc76-1878-4834-83ba-e34b217a354a">
+          <AttributeID>Student Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="731b1f84-a573-4583-af17-e71c7b0beea8">
+          <AttributeID>Student Address Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0d3e48d8-fc13-430c-899b-6a9cefb02fd5">
+          <AttributeID>District</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b6e95884-36b8-4c1d-b736-3a14af44f7fb">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd99cf9d-f161-4054-9006-66bc72c0d340">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="75c73296-ede5-4949-b282-43cb580ebcf5">
+      <ID>Department Dt</ID>
+      <Name>Department Dt</Name>
+      <DimensionID>Department Dt</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="13bd9c63-661f-4350-993b-e76d28e7b91d">
+          <AttributeID>Department Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1afd010d-d9ef-4462-91e4-4cb8f28057dc">
+          <AttributeID>Department Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d8f3ce59-fc16-425d-842f-c36e96938293">
+      <ID>Program Dt</ID>
+      <Name>Program Dt</Name>
+      <DimensionID>Program Dt</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="031ade22-cbfa-4382-88aa-cc7e004deabf">
+          <AttributeID>Program Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac3819dc-ceca-4371-b371-5f0c94f69844">
+          <AttributeID>Program Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c4c2a6f-ae19-4614-8141-ab296291a53c">
+          <AttributeID>Is Regular</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="a234a07e-045e-44b9-881b-bb0a46f328e9">
+      <ID>Student Record Ft</ID>
+      <Name>Student Record Ft</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a7be7639-8778-4983-a95d-4c634123eb30">
+          <ID>Grade Units</ID>
+          <Name>Grade Units</Name>
+          <Source dwd:design-time-name="b6c48541-2398-4d82-96c9-50dbbc8ff06c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ff88114d-b6b0-4558-83fa-a2fdde5d573a">
+              <TableID>dbo_Student_record_ft</TableID>
+              <ColumnID>Grade_units</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ab9b4336-2fd1-494a-b386-ad78f660d9c3">
+          <ID>Attended Hour Count</ID>
+          <Name>Attended Hour Count</Name>
+          <Source dwd:design-time-name="0078f67d-4fca-4c6b-ae95-243a10db9994">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="df5ef6ea-bbfc-402c-b9c8-f014239d8102">
+              <TableID>dbo_Student_record_ft</TableID>
+              <ColumnID>Attended_Hour_count</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="619f8983-3450-44d5-ab54-fd9edaf900fb">
+          <ID>Student Record Ft Count</ID>
+          <Name>Student Record Ft Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2d104d26-a248-47da-b944-dc8150fa5e97">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="2864163f-b5c1-47b4-86c6-75a3351d6463">
+              <TableID>dbo_Student_record_ft</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dc4e2fc2-275f-4d02-aa53-9df916755090">
+          <CubeDimensionID>Student Information Dt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4580af92-e0ca-4348-ba69-94f7310aff61">
+              <AttributeID>Student Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="77cbc883-e9ee-4faf-a319-08df680086cf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a416bd88-070a-49c8-b555-0f4ac842d21c">
+                    <TableID>dbo_Student_record_ft</TableID>
+                    <ColumnID>Student_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="302ad00f-b63e-496d-90e2-d3c301eb768a">
+          <CubeDimensionID>Time Dt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b8733134-04a6-4478-aacd-fb2089175854">
+              <AttributeID>Time Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e9e03bf5-95ed-448c-872b-320879610d57">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b2d9bf93-aaa6-44d1-afc4-dc1591564a63">
+                    <TableID>dbo_Student_record_ft</TableID>
+                    <ColumnID>time_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="95e5463a-1b85-4509-bfc7-443268b9ed70">
+          <CubeDimensionID>Supervisor Dt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="eb206d48-c50d-4efc-9849-0d5181b2244f">
+              <AttributeID>Supervisor Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4a59ff47-f9a0-417e-afb6-c0f805d1ccbb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1f26ef6c-1548-4fdf-baa4-032e1eb2cfdd">
+                    <TableID>dbo_Student_record_ft</TableID>
+                    <ColumnID>Supervisor_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b55395d6-737a-43d8-b6cd-d211237f6c6e">
+          <CubeDimensionID>Semester Dt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cf7e4f67-e3f4-4271-b8e7-ddbdb0319df0">
+              <AttributeID>Semester Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="411d3705-80d6-412f-a4ac-fcda663f98b8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8e82f901-5cdc-40bd-aa4a-caac91266260">
+                    <TableID>dbo_Student_record_ft</TableID>
+                    <ColumnID>Semester_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4e25d994-3366-449b-8c70-18ff3581c696">
+          <CubeDimensionID>Student Address Dt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0e28fcd2-b073-4b59-bc4d-fb1e30a43fa9">
+              <AttributeID>Student Address Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a8ac9fe9-81e7-4d45-b37a-a903b3f99dfc">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a487ac49-5527-43d7-8cb6-2b6f69fc0264">
+                    <TableID>dbo_Student_record_ft</TableID>
+                    <ColumnID>Student_Address_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b6e08d51-86f6-470f-94ba-899eb2ad6e6b">
+          <CubeDimensionID>Department Dt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="092256b5-7e9d-4888-824b-a754f4d7b8b4">
+              <AttributeID>Department Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="92949908-5904-40e0-960e-07f1186e8ef7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a50f8e7d-69d6-40fc-ad9f-41642e132bfc">
+                    <TableID>dbo_Student_record_ft</TableID>
+                    <ColumnID>Department_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e4f65149-0258-4a98-8381-52b707a678e7">
+          <CubeDimensionID>Program Dt</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2b82662e-738c-44bf-b832-0c21cc68da1f">
+              <AttributeID>Program Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e63a2fe5-4e26-496e-a702-58a86a4d5909">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a99f454b-d1d4-4233-8498-96f7473d7f6e">
+                    <TableID>dbo_Student_record_ft</TableID>
+                    <ColumnID>Program_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="8210aa2c-2d70-4449-817f-76a8b88db376">
+    <DataSourceViewID>Student Management System</DataSourceViewID>
+  </Source>
+</Cube>
